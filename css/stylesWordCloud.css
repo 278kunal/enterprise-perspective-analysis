@@ -1,0 +1,55 @@
+#wrapperWordCloud{
+	margin-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  margin-right: 3%;
+}
+#cloud1{
+  width: 50%;
+  float: left;
+  margin-top: -2%;
+}
+#cloud2{
+	margin-top: 5%;
+}
+#headingCloud1{
+	margin-left: 45%;
+}
+#headingCloud2{
+	  margin-left: 70%;
+}
+#img-wc1{
+	  margin-left: 20%;
+	  margin-bottom: 10%;
+}
+#img-freq1{
+	margin-left: 10%;
+}
+#img-wc2{
+	margin-left: 59%;
+	margin-bottom: 5%;
+}
+#img-freq2{
+	margin-left: 55%;
+}
+#table1heading{
+	  margin-left: 22%;
+  margin-top: 10%;
+}
+#table2heading{
+	  margin-left: 64%;
+  margin-top: 4%;
+}
+#tablecloud1{
+  width: 80%;
+  float: left;
+  display: inline-block;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+#tablecloud2{
+	    width: 42%;
+  margin-left: 54%;
+  margin-top: 2%;
+}

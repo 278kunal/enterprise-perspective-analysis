@@ -1,0 +1,30 @@
+#headline{
+  margin-left: 20%;
+}
+#wrapper{
+   margin-left: 13%;
+  margin-right: 22%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+#mainForm{
+	 border: 1px solid gray;
+  border-radius: 25px;
+  width: 80%;
+  margin-left: 17%;
+}
+#formHeading{
+	margin-left: 35%;
+  margin-bottom: 5%;
+}
+#form{
+}
+.glyphshft{
+	margin-right: 2%;
+}
+.btnshft{
+	  margin-left: 34%;
+	    margin-top: 5%
+}
+.analysisType{
+}
