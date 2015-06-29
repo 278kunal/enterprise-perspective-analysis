@@ -12,8 +12,8 @@
 	 $table2 = "handle2";
 	 $analysis = $_POST['analysis'];
 	 if($analysis==2) {
-		exec("Rscript wc3.R $handle1 $handle1wcfile $handle1freqfile $table1");
-		exec("Rscript wc3.R $handle2 $handle2wcfile $handle2freqfile $table2");
+		exec("Rscript .\bin\wordCloud.R $handle1 $handle1wcfile $handle1freqfile $table1");
+		exec("Rscript .\bin\wordCloud.R $handle2 $handle2wcfile $handle2freqfile $table2");
 	 }else{
 		 echo "Try Again!";
 	 }
@@ -43,8 +43,8 @@
 
 	<div id="cloud1">
 	<h2 id="headingCloud1"><?php if(isset($_POST)){ echo ucfirst($_POST['handle1']);}?></h2>
-	<img class="img-responsive" id="img-wc1" src="<?php echo $handle1wcfile;?>" alt="wordcloud1">
-	<img class="img-responsive" id="img-freq1" src="<?php echo $handle1freqfile;?>" alt="freqwordcloud1">
+	<img class="img-responsive" id="img-wc1" src="bin\<?php echo $handle1wcfile;?>" alt="wordcloud1">
+	<img class="img-responsive" id="img-freq1" src="bin\<?php echo $handle1freqfile;?>" alt="freqwordcloud1">
 	<h3 id="table1heading">Last few tweets of <?php echo $handle1;?></h3>
 	<table class="table table-hover" id="tablecloud1">
   		<tr class="info">
@@ -70,8 +70,8 @@
 	<?php $s1=1;?>
 	<div id="cloud2">
 	<h2 id="headingCloud2"><?php if(isset($_POST)){ echo ucfirst($_POST['handle2']);}?></h2>
-	<img class="img-responsive" id="img-wc2" src="<?php echo $handle2wcfile;?>" alt="wordcloud1">
-	<img class="img-responsive" id="img-freq2" src="<?php echo $handle2freqfile;?>" alt="freqwordcloud2">
+	<img class="img-responsive" id="img-wc2" src="bin\<?php echo $handle2wcfile;?>" alt="wordcloud1">
+	<img class="img-responsive" id="img-freq2" src="bin\<?php echo $handle2freqfile;?>" alt="freqwordcloud2">
 	<h3 id="table2heading">Last few tweets of <?php echo $handle2;?></h3>
 	<table class="table table-hover" id="tablecloud2">
   		<tr class="info">

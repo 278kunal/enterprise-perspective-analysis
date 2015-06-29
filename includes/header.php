@@ -9,6 +9,18 @@
 	<link href="css/stylesCustom.css" rel="stylesheet">
 	<link href="css/stylesWordCloud.css" rel="stylesheet">
   </head>
+  <script type="text/javascript">
+  function onSubmitForm() {
+    if(document.mainForm.analysis[0].checked == true) {
+      document.mainForm.action = "sentimentalAnalysis.php";
+    } else 
+      if(document.mainForm.analysis[1].checked == true) {
+      document.mainForm.action = "wordCloud.php";
+      }
+      return true;
+  }
+
+  </script
   <body>
   
   <!--Header Begins-->

@@ -6,7 +6,7 @@
 	    
 		<div id="mainForm">
 		<h2 id="formHeading"><span class="glyphicon glyphicon-play-circle glyphshft" aria-hidden="true"></span>Run Analysis</h2>
-		<form class="form-horizontal" id="form" action="wordCloud.php" method="post">
+		<form class="form-horizontal" name="mainForm" id="form" onsubmit="return onSubmitForm();" method="post">
 		
 			<div class="form-group">
 			<label for="inputEmail3" class="col-sm-4 control-label">Enter Handle#1</label>
