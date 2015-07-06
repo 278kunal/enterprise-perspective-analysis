@@ -9,7 +9,7 @@ if(isset($_POST)) {
 	 $handle2op = "output2.txt";
 	 $analysis = $_POST['analysis'];
 	 if($analysis==1) {
-		exec("Rscript .\bin\sentimentalAnalysis.R $handle1 $handle2senfile $handle1op");
+		exec("Rscript .\bin\sentimentalAnalysis.R $handle1 $handle1senfile $handle1op");
 		exec("Rscript .\bin\sentimentalAnalysis.R $handle2 $handle2senfile $handle2op");
 		}else{
 		 echo "Try Again!";

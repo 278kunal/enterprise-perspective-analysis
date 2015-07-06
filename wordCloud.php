@@ -23,7 +23,7 @@
  ?>
  <?php
 	error_reporting(0);
-	$db = new mysqli('127.0.0.1','root','ixarstfz','wordcloud');
+	$db = new mysqli('127.0.0.1','root','','wordcloud');
 	if($db->connect_errno) {
 		die('Sorry , we are having some problems.');
 	}

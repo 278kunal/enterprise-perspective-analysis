@@ -1,83 +1,74 @@
 <?php include 'includes/header.php'; ?>
+<div class="content">
+</div>
+<div class="row">
+          <div class="col-lg-6 shftNew">
+            <div class="well bs-component">
+              <form class="form-horizontal" name="mainForm" id="form" onsubmit="return onSubmitForm();" method="post">
+                <fieldset>
+                  <legend>Analysis Setup</legend>
+                  <div class="form-group">
+                    <label for="handle1" class="col-lg-2 control-label">Handle #1</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" name="handle1" placeholder="Handle#1">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword" class="col-lg-2 control-label">Handle #2</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" name="handle2" placeholder="Handle#2">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Checkbox
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="textArea" class="col-lg-2 control-label">Textarea</label>
+                    <div class="col-lg-10">
+                      <textarea class="form-control" rows="3" id="textArea"></textarea>
+                      <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label">Analysis :</label>
+                    <div class="col-lg-10">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="analysis" id="optionsRadios1" value="1" checked="">
+                          Sentimental Analysis
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="analysis" id="optionsRadios2" value="2">
+                          WordCloud
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button type="reset" class="btn btn-default">Cancel</button>
+                      <button type="submit" class="btn btn-primary" onclick="return showloader();">Run</button>
 
-    <h1 id="headline">Welcome to Text Mining and Analytics Application</h1>
-	
-	<div id="wrapper">
-	    
-		<div id="mainForm">
-		<h2 id="formHeading"><span class="glyphicon glyphicon-play-circle glyphshft" aria-hidden="true"></span>Run Analysis</h2>
-		<form class="form-horizontal" name="mainForm" id="form" onsubmit="return onSubmitForm();" method="post">
-		
-			<div class="form-group">
-			<label for="inputEmail3" class="col-sm-4 control-label">Enter Handle#1</label>
-			<div class="col-sm-6">
-			<div class="input-group">
-			<div class="input-group-addon"><span class="glyphicon glyphicon-tags"></span></div>
-			<input type="text" class="form-control" name="handle1" placeholder="Handle#1">
-			</div>
-			</div>
+                      <div id="loading" style="display:none;">
+  			<img id="loading-image" src="images/loading.gif"  alt="Loading..." />
 			</div>
 			
-			<div class="form-group">
-			<label for="inputPassword3" class="col-sm-4 control-label">Enter Handle#2</label>
-			<div class="col-sm-6">
-			<div class="input-group">
-			<div class="input-group-addon"><span class="glyphicon glyphicon-tags"></span></div>
-			<input type="text" class="form-control" name="handle2" placeholder="Handle#2">
-			</div>
-			</div>
-			</div>
-			
-			<div class="form-group">
-			<label for="analysisType" class="col-sm-4 control-label">Select Analysis type :</label>
-			<div class="col-sm-8">
-			<div class="radio">
-			<label>
-			<input type="radio" name="analysis" id="optionsRadios1" value="1" checked>
-			Sentimental Analysis
-			</label>
-			</div>
-			</div>
-			
-			<div class="col-sm-offset-4 col-sm-8">
-			<div class="radio">
-			<label>
-			<input type="radio" name="analysis" id="optionsRadios2" value="2">
-			Word Cloud
-			</label>
-			</div>
-			</div>
-			
-			<div class="col-sm-offset-4 col-sm-8">
-			<div class="radio">
-			<label>
-			<input type="radio" name="analysis" id="optionsRadios3" value="3">
-			Trending Products
-			</label>
-			</div>
-			</div>
-			
-			<div class="col-sm-offset-4 col-sm-8">
-			<div class="radio">
-			<label>
-			<input type="radio" name="analysis" id="optionsRadios3" value="4">
-			Company Ranking
-			</label>
-			</div>
-			</div>
-			
-			<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
-			<button type="submit" class="btn btn-primary btnshft">Analyse !</button>
-			</div>
-			</div>
-			
-			
-	</form>
-	</div>
-	
-	
-	</div>
-	
+			<script>
+					function showloader(){
+						document.getElementById("loading").style.display = "block";
+						return true; 
+					}
+
+			</script>
+
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
 <?php include 'includes/footer.php'; ?>
-   

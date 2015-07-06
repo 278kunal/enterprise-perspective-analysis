@@ -8,8 +8,8 @@ library('twitteR')
 library('tm')
 library('wordcloud')
 library('RMySQL');
-consumer_key <- 'cH7NFzUzNiIOpdpWlxj4rWbKb'
-consumer_secret <- 'uUSjYAPCcZcrtsceeUhcucPWI8whykaJlygJy9R69O7foibnf3'
+consumer_key <- 'oQY1WJCHiLitI30VbAaOpIHxG'
+consumer_secret <- 'QRqxOGL4ETnjRW6bbdU2ixt55N8mGN0DjvsiCjyPtMIj3qKIbX'
 access_token <- '2578016490-brR6eHTbcN3eyJo9G8UFkdS1YUvCqRHfeUsiH1l'
 access_secret <- 'JuMbOXrdubpGryu3ZMAG3e2Fj1Jr4sZwEl9pcwj5rRQ8x'
 setup_twitter_oauth(consumer_key,consumer_secret, access_token , access_secret)
@@ -40,7 +40,7 @@ freq <- function(handle_text,freqfile) {
 }
 
 tablewrite <- function(handle.df,table){
-  con <- dbConnect(RMySQL::MySQL(),dbname="wordcloud", host="localhost",user="root",password="ixarstfz")
+  con <- dbConnect(RMySQL::MySQL(),dbname="wordcloud", host="localhost",user="root",password="")
   handle.df<-head(handle.df,n=5)
   dbRemoveTable(con, table)
   dbWriteTable(con,table,handle.df,row.names=FALSE)
